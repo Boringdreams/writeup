@@ -1,31 +1,30 @@
 ## Web 1 FEEDBACK
 [site](https://web2.ctfsecurinets.com/)
-![](https://github.com/Boringdreams/writeup/blob/master/securinets/web_FEEDBACK/png/website.png)
+![](https://github.com/Boringdreams/writeup/blob/master/securinets/FEEDBACK/png/website.png)
 
 Включаем бурп и кидаем в active scan
 Он нашел xxe уязвимость , начинаем ковыряться с ней
 
-![](https://github.com/Boringdreams/writeup/blob/master/securinets/web_FEEDBACK/png/web1.png)
+![](https://github.com/Boringdreams/writeup/blob/master/securinets/FEEDBACK/png/web1.png)
 
-![](https://github.com/Boringdreams/writeup/blob/master/securinets/web_FEEDBACK/png/web1_2screen.png)
+![](https://github.com/Boringdreams/writeup/blob/master/securinets/FEEDBACK/png/web1_2screen.png)
 
 Гуглим про nginx,а именно NGinx Default public www location
 находим вот такой путь пробуем вставить 
 **/etc/nginx/sites-enabled/default**
 
-![](https://github.com/Boringdreams/writeup/blob/master/securinets/web_FEEDBACK/png/web1_3.png)
+![](https://github.com/Boringdreams/writeup/blob/master/securinets/FEEDBACK/png/web1_3.png)
 
 Вот Response:
-'''
-HTTP/1.1 200 OK
-Server: nginx/1.10.3 (Ubuntu)
-Date: Sun, 24 Mar 2019 11:44:58 GMT
-Content-Type: text/html; charset=UTF-8
-Connection: close
-Content-Length: 2470
-'''
-'''
-<h4>Thanks For you Feedback sadas##
+#
+#HTTP/1.1 200 OK
+#Server: nginx/1.10.3 (Ubuntu)
+#Date: Sun, 24 Mar 2019 11:44:58 GMT
+#Content-Type: text/html; charset=UTF-8
+#Connection: close
+#Content-Length: 2470
+Request:
+#<h4>Thanks For you Feedback sadas
 # You should look at the following URL's in order to grasp a solid understanding
 # of Nginx configuration files in order to fully unleash the power of Nginx.
 # https://www.nginx.com/resources/wiki/start/
@@ -41,13 +40,11 @@ Content-Length: 2470
 # available underneath a path with that package name, such as /drupal8.
 #
 # Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
-##
-
 # Default server configuration
 #
-server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
+#server {
+#	listen 80 default_server;
+#	listen [::]:80 default_server;
 
 	# SSL configuration
 	#
@@ -65,29 +62,28 @@ server {
 	#
 	# include snippets/snakeoil.conf;
 
-	root /var/www/html/epreuve;
+#	root /var/www/html/epreuve;
 
 	# Add index.php to the list if you are using PHP
-	index index.php index.html index.htm index.nginx-debian.html;
+#	index index.php index.html index.htm index.nginx-debian.html;
 
-	server_name _;
-
-	location / {
+#	server_name _;
+#	location / {
 		# First attempt to serve request as file, then
 		# as directory, then fall back to displaying a 404.
-		try_files $uri $uri/ =404;
-	}
+#		try_files $uri $uri/ =404;
+#	}
 
 	# pass PHP scripts to FastCGI server
 	#
-	location ~ \.php$ {
-		include snippets/fastcgi-php.conf;
+#	location ~ \.php$ {
+#		include snippets/fastcgi-php.conf;
 	#
 	#	# With php-fpm (or other unix sockets):
-		fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+#		fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
 	#	# With php-cgi (or other tcp sockets):
 #		fastcgi_pass 127.0.0.1:9000;
-	}
+#	}
 
 	# deny access to .htaccess files, if Apache's document root
 	# concurs with nginx's one
@@ -116,16 +112,16 @@ server {
 #		try_files $uri $uri/ =404;
 #	}
 #}
-</h4>
-'''
+#</h4>
 
-![](https://github.com/Boringdreams/writeup/blob/master/securinets/web_FEEDBACK/png/web3_2.png)
+
+![](https://github.com/Boringdreams/writeup/blob/master/securinets/FEEDBACK/png/web3_2.png)
 
 Видим строку :root /var/www/html/epreuve 
 Пытаемся вставить в ее с добавлением /flag 
 Забираем наш флаг и 731point :
 **Securinets{Xxe_xXE_@Ll_Th3_W@Y}**
 
-![](https://github.com/Boringdreams/writeup/blob/master/securinets/web_FEEDBACK/png/web1_finish.png)
+![](https://github.com/Boringdreams/writeup/blob/master/securinets/FEEDBACK/png/web1_finish.png)
 
 
