@@ -8,6 +8,7 @@
 Или tcp contains flag (если есть поля с 'flag)
 
 ![](https://github.com/Boringdreams/writeup/blob/master/securinets/EASY_TRADE/png/forenc2.png)
+
 ![](https://github.com/Boringdreams/writeup/blob/master/securinets/EASY_TRADE/png/forenc3.png)
 
 правой кнопкой по data --> export packet bytes скачиваем файл как flag.file 
