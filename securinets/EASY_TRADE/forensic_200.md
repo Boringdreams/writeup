@@ -14,7 +14,7 @@
 правой кнопкой по data --> export packet bytes скачиваем файл как flag.file 
 хм сразу показал,что это архив,но для проверки запускаем терминал 
 
-![](https://github.com/Boringdreams/writeup/blob/master/securinets/png/EASY_TRADE/forenc4.png)
+![](https://github.com/Boringdreams/writeup/blob/master/securinets/EASY_TRADE/png/forenc4.png)
 
 file flag.file -->flag.file: Zip archive data, at least v1.0 to extract
 распаковываем видим что нам необходим пароль : securinetsXD
