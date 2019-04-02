@@ -18,19 +18,19 @@
 
 Вот Response:
 
-`
+```
 HTTP/1.1 200 OK
 Server: nginx/1.10.3 (Ubuntu)
 Date: Sun, 24 Mar 2019 11:44:58 GMT
 Content-Type: text/html; charset=UTF-8
 Connection: close
 Content-Length: 2470
-`
+```
 
 Request:
 
-`
-<h4>Thanks For you Feedback sadas
+```
+Thanks For you Feedback sadas
  You should look at the following URL's in order to grasp a solid understanding
  of Nginx configuration files in order to fully unleash the power of Nginx.
  https://www.nginx.com/resources/wiki/start/
@@ -104,8 +104,8 @@ server {
 		try_files $uri $uri/ =404;
 	}
 }
-</h4>
-`
+
+```
 
 ![](https://github.com/Boringdreams/writeup/blob/master/securinets/FEEDBACK/png/web3_2.png)
 
