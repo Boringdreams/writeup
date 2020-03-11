@@ -8,3 +8,5 @@
    
    
 **My profile** : https://www.hackthebox.eu/profile/202932
+## **Infosec-Task**
+   - [Task 6 - программирование](https://github.com/Boringdreams/writeup/tree/master/InformSecurityTask)
