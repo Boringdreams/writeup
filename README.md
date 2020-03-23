@@ -8,7 +8,7 @@
    
 **My profile** : https://www.hackthebox.eu/profile/202932
 ## **TryHackMe**
-   - [Rooms](https://github.com/Boringdreams/Tryhackme)
+   - [Rooms](https://github.com/Boringdreams/writeup/tree/master/Tryhackme)
   
 **My profile** : https://tryhackme.com/p/boringdreams
 ## **Infosec-Task**
