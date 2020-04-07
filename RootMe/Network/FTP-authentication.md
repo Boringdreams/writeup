@@ -11,7 +11,7 @@ An authenticated file exchange achieved through FTP. Recover the password used b
 `tshark -r ch1.pcap` 
 
 <details>
-  <summary>Вывод комманды</summary>	
+  <summary>Вывод команды</summary>	
 
 ```
 1   0.000000 10.20.144.150 → 10.20.144.151 TCP 74 35974 → 21 [SYN] Seq=0 Win=32648 Len=0 MSS=1380 WS=1 TSval=1657560000 TSecr=0
